@@ -1,35 +1,14 @@
-# Serenity JUnit Starter project
+# String Calculator Challenge
 
+The aim of this challenge is to implement a simple integer calculator. The calculator takes a string of space-separated numbers and operators (like "1 + 2 + 3" or "10 + 4 - 5") and returns the result of the calculation.
 
-This is the simplest possible build script setup for Serenity BDD using Java. 
+It should resolve the following sums:
 
-This is a very minimal sample project using JUnit and Serenity BDD in Java. 
-You can use this project as a quick starting point for your own projects.
+- "1"
+- "1 + 1"
+- "1 + 2 + 3"
+- "10 - 6"
+- "10 + 5 - 6"
+- "10 * 5"
 
-## Get the code
-
-Git:
-
-    git clone https://github.com/serenity-bdd/serenity-junit-starter.git
-    cd serenity-junit-starter
-
-
-Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-starter/archive/master.zip) file.
-
-## Use Maven
-
-Open a command window and run:
-
-    mvn clean verify
-
-## Use Gradle
-
-Open a command window and run:
-
-    gradlew test 
-
-
-## Viewing the reports
-
-Both of the commands provided above will produce a Serenity test report in the `target/site/serenity` directory. Go take a look!
-
+If an operator isn't known, an exception should be thrown.
